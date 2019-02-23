@@ -17,8 +17,9 @@
 		"importHelpers": true,
 		"strictNullChecks": true,
 		"suppressImplicitAnyIndexErrors": true,
-		"noUnusedLocals": true
+		"noUnusedLocals": true,
+		"types": ["jest"]
 	},
 	"includes": ["./src"],
-	"exclude": ["dist", "webpack.config.js", "jest"]
+	"exclude": ["dist", "webpack.config.js", "jest", "babel.config.js"]
 }
