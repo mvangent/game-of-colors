@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"baseUrl": ".",
-		"outDir": "build/dist",
+		"outDir": "dist",
 		"module": "esnext",
 		"target": "es5",
 		"lib": ["es6", "dom"],
@@ -19,14 +19,6 @@
 		"suppressImplicitAnyIndexErrors": true,
 		"noUnusedLocals": true
 	},
-	"exclude": [
-		"node_modules",
-		"public",
-		"build",
-		"scripts",
-		"acceptance-tests",
-		"webpack.config.js",
-		"jest",
-		"src/setupTests.ts"
-	]
+	"includes": ["./src"],
+	"exclude": ["dist", "webpack.config.js", "jest"]
 }

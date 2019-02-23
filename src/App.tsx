@@ -1,21 +1,14 @@
 import * as React from 'react';
+import { ThemeProvider } from 'styled-components';
+import defaultTheme from './design-system/theme/default';
+import GameOfColors from './game/game.container';
 
-import logo from './logo.svg';
-
-class App extends React.Component {
-	public render() {
-		return (
-			<div>
-				<header>
-					<img src={logo} alt="logo" />
-					<h1 className="App-title">Welcome to React</h1>
-				</header>
-				<p className="App-intro">
-					To get started, edit <code>src/App.tsx</code> and save to reload.
-				</p>
-			</div>
-		);
-	}
-}
+const App = () => {
+	return (
+		<ThemeProvider theme={defaultTheme}>
+			<GameOfColors isActive={true} />
+		</ThemeProvider>
+	);
+};
 
 export default App;
